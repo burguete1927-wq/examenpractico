@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deli Pizzas | Pizzas caseras</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio: SIEMPRE después de Bootstrap para poder sobreescribir -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio">
+        <img src="img/Cubiertos.png" alt="Logotipo"
+             width="40" height="40" class="me-2 rounded-circle">
+        Deli Pizzas
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navMenu" aria-controls="navMenu"
+              aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#platillos">Platillos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO (col-md-8 / col-md-4) ================= -->
+  <section id="inicio" class="seccion-hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h1 class="display-5 fw-bold">No te resistas a probar nuestras pizzas</h1>
+          <p class="lead">
+            Somos el mejor negocio de Pizzas de la ciudad.
+          </p>
+          <a href="#contacto" class="btn btn-primary btn-lg mt-3">Reservar mesa</a>
+          <a href="#menu" class="btn btn-outline-light btn-lg mt-3 ms-2">Ver menú</a>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/header.jpg" class="img-fluid rounded-circle shadow"
+               alt="Platillo típico chiapaneco" style="max-width: 220px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TARJETAS / PLATILLOS ================= -->
+  <section id="platillos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestras recomendaciones</h2>
+
+      <div class="alert alert-info" role="alert">
+        <strong>Novedad:</strong> Los fines de semana tenemos buffet de 13:00 a 17:00 h.
+      </div>
+
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <img src="img/hawaiiana.jpg" class="card-img-top" alt="Pizza Hawaiana">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pizza Hawaiana</h5>
+              <p class="card-text">
+                Masa crujiente con salsa de tomate, piña fresca y jamón cocido.
+              </p>
+              <a href="#contacto" class="btn btn-outline-primary mt-auto">Pedir ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <img src="img/peperoni.jpg" class="card-img-top" alt="Pizza Pepperoni">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pizza Pepperoni</h5>
+              <p class="card-text">
+                Masa crujiente con salsa de tomate y pepperoni fresco.
+              </p>
+              <a href="#contacto" class="btn btn-outline-primary mt-auto">Pedir ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <img src="img/vegetariana.jpg" class="card-img-top" alt="Pizza Vegetariana">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pizza Vegetariana</h5>
+              <p class="card-text">
+                Masa crujiente con salsa de tomate y una variedad de vegetales frescos.
+              </p>
+              <a href="#contacto" class="btn btn-outline-primary mt-auto">Pedir ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TABLA / MENÚ ================= -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Menú y nivel de picante</h2>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered tabla-menu align-middle">
+          <caption class="text-center small">Precios en pesos mexicanos. IVA incluido.</caption>
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Platillo</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pizza Hawaiana</td>
+              <td>Masa crujiente con salsa de tomate y piña fresca</td>
+              <td>$65</td>
+            </tr>
+            <tr>
+              <td>Pizza Pepperoni</td>
+              <td>Masa crujiente con salsa de tomate y pepperoni fresco</td>
+              <td>$70</td>
+            </tr>
+            <tr>
+              <td>Pizza Vegetariana</td>
+              <td>Masa crujiente con salsa de tomate y una variedad de vegetales frescos</td>
+              <td>$65</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Reservaciones y pedidos</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="alert alert-warning" role="alert">
+            <strong>Atención:</strong> Los pedidos para llevar deben confirmarse con tiempo de anticipación.
+          </div>
+
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="usuario@correo.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <select class="form-select" id="asunto" required>
+                <option value="">Selecciona una opción</option>
+                <option value="reservacion">Reservación de mesa</option>
+                <option value="pedido">Pedido para llevar</option>
+                <option value="evento">Evento o banquete</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4"
+                        placeholder="Indica fecha, hora y número de personas"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+            <button type="reset" class="btn btn-outline-secondary w-100 mt-2">Limpiar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+      Deli Pizzas &mdash; Tuxtla Gutiérrez, Chiapas &mdash; Examen Práctico &mdash; Octubre 2026
+    </p>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
